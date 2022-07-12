@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>5bfaa504aabf4378a13a4258fb0db01d</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="1TlmowaEC7Ef">
+<p>Negocio:</p>
+<p>En esta sección se realiza un análisis del averageRuntime por tipo, donde insignificant special es el de mayor promedio.</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:423,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="HnFnssEJ3CSq" data-outputId="0b08aa63-4788-4d0f-a495-3226313245c2">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># averageRuntime por tipo (type) por mes</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a1<span class="op">=</span> pd.DataFrame(<span class="bu">round</span>(df33.groupby(<span class="st">&#39;type&#39;</span>)[<span class="st">&#39;runtime&#39;</span>].mean(),<span class="dv">2</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Type <span class="op">=</span> a1.index</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>AverageRuntime <span class="op">=</span> a1[<span class="st">&#39;runtime&#39;</span>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Se define el tamaño del gráfico</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Dibujamos un grafico de barras, especificando (valor eje X, valor eje Y)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.bar(Type,AverageRuntime,color<span class="op">=</span><span class="st">&quot;green&quot;</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>addlabels(Type,AverageRuntime)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;AvgRuntime por Tipo y por Mes&#39;</span>, fontsize<span class="op">=</span><span class="dv">25</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Type&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;AverageRuntime&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostramos el gráfico</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_dbae4c6e0d514b0b813b018e3b878712/93f35cbf3ba2d95aae807fea2d49e422b5fe7327.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="GJ_D4UTNrnz2">
+<p>Luego se revisa la cantidad de series emitidas por género, donde comedia es el mas alto.</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:2268,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="ZqBoDGfieuGy" data-outputId="535cb951-34ee-49c1-8823-7d3be94b6a22">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Cantidad de series emitidas por género por mes.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>a2<span class="op">=</span> pd.DataFrame(<span class="bu">round</span>(df33.groupby(<span class="st">&#39;_embedded.show.genres&#39;</span>)[<span class="st">&#39;id&#39;</span>].count(),<span class="dv">2</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Se asigna el nombre cantidad a la columna</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>a2.columns<span class="op">=</span>[<span class="st">&#39;cant&#39;</span>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Se ordena por promedio de mayor a menor</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>da2<span class="op">=</span>a2.sort_values(by<span class="op">=</span>[<span class="st">&#39;cant&#39;</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>da2</span></code></pre></div>
+<div class="output execute_result" data-execution_count="150">
+
+  <div id="df-5ed8df7d-b4f8-45ed-9d97-6a01a88e22a2">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>cant</th>
+    </tr>
+    <tr>
+      <th>_embedded.show.genres</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>745</td>
+    </tr>
+    <tr>
+      <th>Comedy</th>
+      <td>274</td>
+    </tr>
+    <tr>
+      <th>Drama,Romance</th>
+      <td>268</td>
+    </tr>
+    <tr>
+      <th>Drama</th>
+      <td>96</td>
+    </tr>
+    <tr>
+      <th>Drama,Comedy,Romance</th>
+      <td>84</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Comedy,Supernatural</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Horror,Thriller,Supernatural</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Comedy,Food,Travel</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Comedy,Adventure</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Fantasy</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>159 rows × 1 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5ed8df7d-b4f8-45ed-9d97-6a01a88e22a2')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-5ed8df7d-b4f8-45ed-9d97-6a01a88e22a2 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-5ed8df7d-b4f8-45ed-9d97-6a01a88e22a2');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:1000,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="XeCWmHoLfaJ2" data-outputId="ac4213dd-6083-4338-9ba2-1046b22e7ebf">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Porcentaje por país, con respecto al total de series emitidas por mes.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>a3<span class="op">=</span> pd.DataFrame(<span class="bu">round</span>(df33.groupby(<span class="st">&#39;_embedded.show.webChannel.country.name&#39;</span>)[<span class="st">&#39;id&#39;</span>].count()<span class="op">/</span>df33.shape[<span class="dv">0</span>],<span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Se asigna el nombre cantidad a la columna</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>a3.columns<span class="op">=</span>[<span class="st">&#39;perc.&#39;</span>]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Se ordena por promedio de mayor a menor</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>da3<span class="op">=</span>a3.sort_values(by<span class="op">=</span>[<span class="st">&#39;perc.&#39;</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>da3</span></code></pre></div>
+<div class="output execute_result" data-execution_count="151">
+
+  <div id="df-591c5b47-9eeb-45b6-b4f8-34dbfa917e43">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>perc.</th>
+    </tr>
+    <tr>
+      <th>_embedded.show.webChannel.country.name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>China</th>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>Korea, Republic of</th>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>Russian Federation</th>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>India</th>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Japan</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Hong Kong</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Taiwan, Province of China</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Turkey</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Brazil</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Thailand</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Portugal</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Poland</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Philippines</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Australia</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Malaysia</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Bangladesh</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Iran, Islamic Republic of</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Greece</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Finland</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Egypt</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Kazakhstan</th>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-591c5b47-9eeb-45b6-b4f8-34dbfa917e43')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-591c5b47-9eeb-45b6-b4f8-34dbfa917e43 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-591c5b47-9eeb-45b6-b4f8-34dbfa917e43');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="V4jctgewr0pg">
+<p>Así mismo se revisa el porcentaje por país, y China se destaca con respecto al resto de paises.</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:624,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="E-6Z1AY4jMKK" data-outputId="674b0f67-ed41-4765-edfd-cbda9040b56e">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rating promedio de series por país y género por mes.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#tabla=pd.crosstab(datos1.FAMI_CUARTOSHOGAR, datos1.FAMI_NIVEL_SISBEN)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>a4<span class="op">=</span> pd.DataFrame(<span class="bu">round</span>(df33.groupby([<span class="st">&#39;_embedded.show.webChannel.country.name&#39;</span>, <span class="st">&#39;_embedded.show.genres&#39;</span>])[<span class="st">&#39;rating.average&#39;</span>].mean(),<span class="dv">2</span>))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Se asigna el nombre cantidad a la columna</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>a4.columns<span class="op">=</span>[<span class="st">&#39;promedio&#39;</span>]</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Se ordena por promedio de mayor a menor</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>da4<span class="op">=</span>a4.sort_values(by<span class="op">=</span>[<span class="st">&#39;promedio&#39;</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Se filtra </span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>df4 <span class="op">=</span> da4[da4[<span class="st">&#39;promedio&#39;</span>] <span class="op">&gt;=</span> <span class="dv">0</span>]</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>df4</span></code></pre></div>
+<div class="output execute_result" data-execution_count="148">
+
+  <div id="df-1c8a8a81-de52-4c65-9239-6b3cdc6b319e">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>promedio</th>
+    </tr>
+    <tr>
+      <th>_embedded.show.webChannel.country.name</th>
+      <th>_embedded.show.genres</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top">Korea, Republic of</th>
+      <th>Drama,Romance,Mystery</th>
+      <td>9.75</td>
+    </tr>
+    <tr>
+      <th>Drama,Romance</th>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <th>Comedy,Children,Family</th>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>China</th>
+      <th>Drama,Romance</th>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <th>Drama,Crime,Thriller</th>
+      <td>8.72</td>
+    </tr>
+    <tr>
+      <th>Philippines</th>
+      <th>Drama,Romance</th>
+      <td>8.65</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <th>Medical</th>
+      <td>8.50</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <th>Comedy</th>
+      <td>8.50</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <th>Comedy,Supernatural</th>
+      <td>8.20</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <th>Drama,War,History</th>
+      <td>8.15</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <th>Drama,Crime,Mystery</th>
+      <td>8.00</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <th>Comedy</th>
+      <td>7.83</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <th>Comedy</th>
+      <td>7.57</td>
+    </tr>
+    <tr>
+      <th>Thailand</th>
+      <th>Drama,Comedy,Food</th>
+      <td>7.50</td>
+    </tr>
+    <tr>
+      <th>Russian Federation</th>
+      <th>Crime,Mystery</th>
+      <td>7.50</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">United States</th>
+      <th>Drama</th>
+      <td>7.44</td>
+    </tr>
+    <tr>
+      <th>Drama,Mystery,Supernatural</th>
+      <td>7.33</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <th>Drama</th>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">United States</th>
+      <th>Action,Adventure,Anime,Science-Fiction</th>
+      <td>6.27</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <th>Drama,Horror</th>
+      <td>6.10</td>
+    </tr>
+    <tr>
+      <th>Russian Federation</th>
+      <th>Comedy</th>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <th>Comedy</th>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <th>Drama,Crime,Thriller</th>
+      <td>4.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1c8a8a81-de52-4c65-9239-6b3cdc6b319e')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1c8a8a81-de52-4c65-9239-6b3cdc6b319e button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1c8a8a81-de52-4c65-9239-6b3cdc6b319e');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="UZb6VElHsWnj">
+<p>Finalmente se tiene el rating promedio de series por país y género para el mes de diciembre</p>
+</div>
+</body>
+</html>
